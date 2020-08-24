@@ -1,10 +1,26 @@
-Grading at Mon Aug 24 12:00:21 UTC 2020
+Grading at Mon Aug 24 14:41:15 UTC 2020
 Checking code1.c for legal syntax
-temp.c: In function ‘max’:
-temp.c:13:1: error: control reaches end of non-void function [-Werror=return-type]
- }
- ^
-cc1: all warnings being treated as errors
-The code did not have legal syntax!
-
+Checking for int max (int num1, int num2)
+Found on line 4, column 1 
+Checking for int main(void)
+Found on line 15, column 1 
+Trying to run the code..
+Line_1_did_not_match
+Line_2_did_not_match
+Line_3_did_not_match
+Line_4_did_not_match
+Line_5_did_not_match
+Line_6_did_not_match
+Line_7_did_not_match
+Line_8_did_not_match
+Your file did not match the expected ouput
+Here is what you printed
+42
+max(42, -69) is 0
+33
+max(33, 0) is 0
+1193046
+max(0x123456, 123456) is 0
+1158813103
+max(0x451215AF, 0x913591AF is 0/n
 Overall Grade: F
