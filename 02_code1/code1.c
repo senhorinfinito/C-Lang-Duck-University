@@ -6,9 +6,9 @@ int max (int num1, int num2) {
     printf("%d\n",num1);
       //otherwise, your answer is num
   else
-    printf("%d\n",num2);
+    {  printf("%d\n",num2);
+    }
 }
-
 int main(void) {
   printf("max(42, -69) is %d\n", max(42, -69));
   printf("max(33, 0) is %d\n", max(33, 0));
