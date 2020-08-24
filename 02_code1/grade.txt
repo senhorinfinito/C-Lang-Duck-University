@@ -1,0 +1,10 @@
+Grading at Mon Aug 24 06:57:06 UTC 2020
+Checking code1.c for legal syntax
+temp.c: In function ‘max’:
+temp.c:7:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+The code did not have legal syntax!
+
+Overall Grade: F
