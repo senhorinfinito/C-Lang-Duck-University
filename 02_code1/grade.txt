@@ -1,26 +1,23 @@
-Grading at Mon Aug 24 14:41:15 UTC 2020
+Grading at Mon Aug 24 15:11:27 UTC 2020
 Checking code1.c for legal syntax
-Checking for int max (int num1, int num2)
-Found on line 4, column 1 
-Checking for int main(void)
-Found on line 15, column 1 
-Trying to run the code..
-Line_1_did_not_match
-Line_2_did_not_match
-Line_3_did_not_match
-Line_4_did_not_match
-Line_5_did_not_match
-Line_6_did_not_match
-Line_7_did_not_match
-Line_8_did_not_match
-Your file did not match the expected ouput
-Here is what you printed
-42
-max(42, -69) is 0
-33
-max(33, 0) is 0
-1193046
-max(0x123456, 123456) is 0
-1158813103
-max(0x451215AF, 0x913591AF is 0/n
+temp.c:3:1: error: expected identifier or ‘(’ before numeric constant
+ 0;276;0c#include <stdio.h>
+ ^
+temp.c:3:3: error: expected identifier or ‘(’ before numeric constant
+ 0;276;0c#include <stdio.h>
+   ^
+temp.c:3:7: error: invalid suffix "c" on integer constant
+ 0;276;0c#include <stdio.h>
+       ^
+temp.c:3:7: error: expected identifier or ‘(’ before numeric constant
+temp.c:3:9: error: stray ‘#’ in program
+ 0;276;0c#include <stdio.h>
+         ^
+temp.c: In function ‘main’:
+temp.c:16:34: error: implicit declaration of function ‘max’ [-Werror=implicit-function-declaration]
+   printf("max(42, -69) is %d\n", max(42, -69));
+                                  ^
+cc1: all warnings being treated as errors
+The code did not have legal syntax!
+
 Overall Grade: F
