@@ -8,6 +8,7 @@ int max (int num1, int num2) {
   else
     {  printf("%d\n",num2);
     }
+  return 0;
 }
 int main(void) {
   printf("max(42, -69) is %d\n", max(42, -69));
