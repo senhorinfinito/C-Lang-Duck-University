@@ -1,7 +1,28 @@
-Grading at Mon Aug 24 06:57:06 UTC 2020
+Grading at Mon Aug 24 11:06:23 UTC 2020
 Checking code1.c for legal syntax
 temp.c: In function ‘max’:
-temp.c:7:1: error: control reaches end of non-void function [-Werror=return-type]
+temp.c:8:12: error: passing argument 1 of ‘printf’ makes pointer from integer without a cast [-Werror=int-conversion]
+     printf(num1);
+            ^
+In file included from temp.c:1:0:
+/usr/include/stdio.h:362:12: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern int printf (const char *__restrict __format, ...);
+            ^
+temp.c:8:5: error: format not a string literal and no format arguments [-Werror=format-security]
+     printf(num1);
+     ^
+temp.c:10:7: error: expected expression before ‘:’ token
+   else: printf(num2);
+       ^
+temp.c: In function ‘main’:
+temp.c:18:75: error: expected ‘)’ before ‘;’ token
+   printf("max(0x451215AF, 0x913591AF is %d/n", max(0x451215AF, 0x913591AF);  
+                                                                           ^
+temp.c:20:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+temp.c: In function ‘max’:
+temp.c:11:1: error: control reaches end of non-void function [-Werror=return-type]
  }
  ^
 cc1: all warnings being treated as errors
