@@ -1,12 +1,5 @@
-Grading at Mon Aug 24 11:20:00 UTC 2020
+Grading at Mon Aug 24 11:28:47 UTC 2020
 Checking code1.c for legal syntax
-temp.c: In function ‘main’:
-temp.c:19:75: error: expected ‘)’ before ‘;’ token
-   printf("max(0x451215AF, 0x913591AF is %d/n", max(0x451215AF, 0x913591AF);  
-                                                                           ^
-temp.c:21:1: error: expected ‘;’ before ‘}’ token
- }
- ^
 temp.c: In function ‘max’:
 temp.c:12:1: error: control reaches end of non-void function [-Werror=return-type]
  }
