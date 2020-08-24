@@ -17,5 +17,3 @@ int main(void) {
   printf("max(0x451215AF, 0x913591AF is %d/n", max(0x451215AF, 0x913591AF));  
   return 0;
 }
-
-
