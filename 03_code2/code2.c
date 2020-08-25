@@ -38,9 +38,5 @@ int main(void) {
   printf("That is triangle had %d total stars\n", numStars);
   //prints the value of numStars
   printf("%d\n",numStars);
-
   return 0;
 }
-
-
-
