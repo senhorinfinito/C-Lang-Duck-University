@@ -1,0 +1,17 @@
+Grading at Tue Aug 25 10:31:44 UTC 2020
+Checking code2.c for legal syntax
+temp.c: In function ‘main’:
+temp.c:38:14: error: ‘print’ undeclared (first use in this function)
+   numStars = print Triangle(7);
+              ^
+temp.c:38:14: note: each undeclared identifier is reported only once for each function it appears in
+temp.c:38:20: error: expected ‘;’ before ‘Triangle’
+   numStars = print Triangle(7);
+                    ^
+temp.c:40:10: error: format ‘%d’ expects a matching ‘int’ argument [-Werror=format=]
+   printf("That is triangle had %d total stars\n");
+          ^
+cc1: all warnings being treated as errors
+The code did not have legal syntax!
+
+Overall Grade: F
