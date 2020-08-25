@@ -1,9 +1,9 @@
-Grading at Tue Aug 25 10:34:39 UTC 2020
+Grading at Tue Aug 25 10:37:54 UTC 2020
 Checking code2.c for legal syntax
 Checking for int printTriangle (int size)
 Found on line 3, column 1 
 Checking for int main(void)
-Found on line 30, column 1 
+Found on line 28, column 1 
 Trying to run the code..
 Line_6_did_not_match
 Line_7_did_not_match
