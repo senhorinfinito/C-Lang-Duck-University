@@ -1,4 +1,4 @@
-Grading at Tue Aug 25 10:45:35 UTC 2020
+Grading at Tue Aug 25 14:06:21 UTC 2020
 Checking code2.c for legal syntax
 Checking for int printTriangle (int size)
 Found on line 5, column 1 
@@ -15,7 +15,7 @@ Here is a triangle with height 4
 **
 ***
 ****
-That triangle had 32777 total stars
+That triangle had 32775 total stars
 Here is a triangle with height 7
 *
 **
@@ -24,7 +24,7 @@ Here is a triangle with height 7
 *****
 ******
 *******
-That is triangle had 32795 total stars
-32795
+That is triangle had 32793 total stars
+32793
 
 Overall Grade: F
