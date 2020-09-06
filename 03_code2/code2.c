@@ -2,8 +2,8 @@
 #include<stdlib.h>
 int printTriangle(int size) {
   //start with starCount being 0
-float  i,j;
-  float starCount;
+int  i,j;
+  int starCount;
     //count from 0 (inclusive) to size (exclusive), for each number i that you count
   for (i=0; i<size; i++){
      //count from 0 (inclusive) to i (inclusive), for each number j that you count
@@ -36,7 +36,7 @@ int main(void) {
   //then call printTriangle, passing in 7, and assign the result to numStars
   numStars = printTriangle(7);
   //finally, print "That triangle had %d total stars\n", such that the %d
-  printf("That is triangle had %d total stars\n", numStars);
+  printf("That triangle had %d total stars\n", numStars);
   //prints the value of numStars
   printf("%d\n",numStars);
   return 0;
