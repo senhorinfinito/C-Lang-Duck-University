@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int printTriangle(int size) {
   //start with starCount being 0
-  int i,j;
+float  i,j;
   float starCount;
     //count from 0 (inclusive) to size (exclusive), for each number i that you count
   for (i=0; i<size; i++){
