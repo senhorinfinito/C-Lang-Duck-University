@@ -1,12 +1,10 @@
-Grading at Sun Sep  6 12:26:44 UTC 2020
+Grading at Sun Sep  6 13:40:25 UTC 2020
 Checking code2.c for legal syntax
 Checking for int printTriangle (int size)
 Found on line 5, column 1 
 Checking for int main(void)
 Found on line 31, column 1 
 Trying to run the code..
-Line_6_did_not_match
-Line_15_did_not_match
 Line_16_did_not_match
 Your file did not match the expected ouput
 Here is what you printed
@@ -15,7 +13,7 @@ Here is a triangle with height 4
 **
 ***
 ****
-That triangle had 0 total stars
+That triangle had 10 total stars
 Here is a triangle with height 7
 *
 **
@@ -24,7 +22,7 @@ Here is a triangle with height 7
 *****
 ******
 *******
-That triangle had 0 total stars
-0
+That triangle had 28 total stars
+28
 
 Overall Grade: F
