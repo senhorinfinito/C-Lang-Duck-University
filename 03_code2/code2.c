@@ -21,7 +21,7 @@ float starCount;
   //when you finish counting on i, 
   }
   //your answer is starCount
-  return starCount;
+  return 0;
   
 }
 
