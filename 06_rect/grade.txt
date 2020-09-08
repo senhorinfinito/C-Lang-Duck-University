@@ -1,0 +1,19 @@
+Grading at Tue Sep  8 08:36:32 UTC 2020
+Attempting to compile rectangle.c
+rectangle.c: In function ‘intersection’:
+rectangle.c:48:7: error: implicit declaration of function ‘cononocalize’ [-Werror=implicit-function-declaration]
+   r1= cononocalize (r1);
+       ^
+rectangle.c:48:5: error: incompatible types when assigning to type ‘rectangle {aka struct rect_tag}’ from type ‘int’
+   r1= cononocalize (r1);
+     ^
+rectangle.c:49:8: error: implicit declaration of function ‘cononicalize’ [-Werror=implicit-function-declaration]
+   r2 = cononicalize (r2);
+        ^
+rectangle.c:49:6: error: incompatible types when assigning to type ‘rectangle {aka struct rect_tag}’ from type ‘int’
+   r2 = cononicalize (r2);
+      ^
+cc1: all warnings being treated as errors
+The code did not compile!
+
+Overall Grade: F
