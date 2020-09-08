@@ -1,4 +1,4 @@
-Grading at Tue Sep  8 08:36:32 UTC 2020
+Grading at Tue Sep  8 08:36:47 UTC 2020
 Attempting to compile rectangle.c
 rectangle.c: In function ‘intersection’:
 rectangle.c:48:7: error: implicit declaration of function ‘cononocalize’ [-Werror=implicit-function-declaration]
