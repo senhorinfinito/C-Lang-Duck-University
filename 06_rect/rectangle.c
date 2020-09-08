@@ -30,7 +30,7 @@ rectangle canonicalize(rectangle r) {
 
   //WRITE THIS FUNCTION
   //change neg. value to
-  i if (r.width < 0)
+ if (r.width < 0)
     {
       r.x -= abs(r.width);
       r.width = abs(r.width);
