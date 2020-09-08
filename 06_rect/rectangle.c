@@ -30,14 +30,16 @@ rectangle canonicalize(rectangle r) {
 
   //WRITE THIS FUNCTION
   //change neg. value to
-  if (r.width < 0) {
-    r.x += r.width;
-    r.width *= -1;
-  }
-  if (r.height < 0) {
-    r.y += r.height;
-    r.height *= -1;
-  }
+  i if (r.width < 0)
+    {
+      r.x -= abs(r.width);
+      r.width = abs(r.width);
+    }
+  if (r.height < 0)
+    {
+      r.y -= abs(r.height);
+      r.height = abs(r.height);
+    }
   return r;
 }
 
