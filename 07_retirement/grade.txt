@@ -1,4 +1,4 @@
-Grading at Tue Sep  8 15:57:47 UTC 2020
+Grading at Tue Sep  8 15:58:15 UTC 2020
 Attempting to compile retirement.c
 Checking for struct _retire_info
 Found on line 4, column 1 
@@ -885,8 +885,6 @@ Line_868_did_not_match
 Line_869_did_not_match
 Line_870_did_not_match
 Line_871_did_not_match
-Line_872_did_not_match
-Line_873_did_not_match
 Your file did not match the expected ouput
 Your output did not match what we expected. Here is what you printed
 Age  27 month  3 you have $21345.00
@@ -1760,7 +1758,5 @@ Age  99 month  6 you have $21345.00
 Age  99 month  7 you have $21345.00
 Age  99 month  8 you have $21345.00
 Age  99 month  9 you have $21345.00
-Age  99 month 10 you have $21345.00
-Age  99 month 11 you have $21345.00
 
 Overall Grade: F
