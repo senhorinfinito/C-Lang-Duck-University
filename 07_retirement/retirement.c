@@ -8,10 +8,9 @@ struct _retire_info {
 };
 typedef struct _retire_info retire_info;
 
-double compute_balance(double initial, double rate_of_return, double contribution)
+double compute_balance(double balance, double rate_of_return, double contribution)
 {
-  double balance = (initial*(1 +rate_of_return)) + contribution;
-  return balance;
+  return balance*(1 +rate_of_return/12)) + contribution;
 }
 
 //For this problem, you will be writing a "retirement savings" calculator.
