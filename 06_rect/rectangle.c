@@ -16,16 +16,55 @@ int max (int a, int b) {
 }
 
 //Declare your rectangle structure here!
+struct rect_tag
+{
+  int x;
+  int y;
+  int width;
+  int height;
+};
+typedef struct rect_tag rectangle;
 
 
 rectangle canonicalize(rectangle r) {
+
   //WRITE THIS FUNCTION
+  //change neg. value to
+  if (r.width<0){
+    r.width=-r.width;
+    r.x+=r.width;
+  }
+  if (r.height< 0){
+    r.height= -r.height;
+    r.y+=r.height;
+  }
   return r;
 }
 rectangle intersection(rectangle r1, rectangle r2) {
+  //Find the intersection of two rectangles
+
+  rectangle inter_rect;
   //WRITE THIS FUNCTION
-  return r1;
+  r1= cononocalize (r1);
+  r2 = cononicalize (r2);
+  if (((r1.x + r1.width < r2.x) || (r2.x + r2.width < r1.x))
+      || ((r1.y + r1.height < r2.y) || (r2.y + r2.height < r1.y))) {
+    // Just give all zeros
+    inter_rect.x = 0;
+    inter_rect.y = 0;
+    inter_rect.width = 0;
+    inter_rect.height = 0;
+  }
+  // Intersection area
+  inter_rect.x = max(r1.x, r2.x);
+  inter_rect.width = min(r1.x + r1.width, r2.x + r2.width) - inter_rect.x;
+  inter_rect.y = max(r1.y, r2.y);
+  inter_rect.height = min(r1.y + r1.height, r2.y + r2.height) - inter_rect.y;
+
+  return inter_rect;
 }
+
+
 
 //You should not need to modify any code below this line
 void printRectangle(rectangle r) {
@@ -34,8 +73,8 @@ void printRectangle(rectangle r) {
     printf("<empty>\n");
   }
   else {
-    printf("(%d,%d) to (%d,%d)\n", r.x, r.y, 
-	                           r.x + r.width, r.y + r.height);
+    printf("(%d,%d) to (%d,%d)\n", r.x, r.y,
+	   r.x + r.width, r.y + r.height);
   }
 }
 
@@ -58,7 +97,7 @@ int main (void) {
   r2.height = -7;
   printf("r2 is ");
   printRectangle(r2);
-  
+
   r3.x = -2;
   r3.y = 7;
   r3.width = 7;
@@ -81,7 +120,7 @@ int main (void) {
   i = intersection(r1,r2);
   printf("intersection(r1,r2): ");
   printRectangle(i);
-  
+
   i = intersection(r1,r3);
   printf("intersection(r1,r3): ");
   printRectangle(i);
@@ -98,7 +137,7 @@ int main (void) {
   i = intersection(r2,r2);
   printf("intersection(r2,r2): ");
   printRectangle(i);
-  
+
   i = intersection(r2,r3);
   printf("intersection(r2,r3): ");
   printRectangle(i);
@@ -115,7 +154,7 @@ int main (void) {
   i = intersection(r3,r2);
   printf("intersection(r3,r2): ");
   printRectangle(i);
-  
+
   i = intersection(r3,r3);
   printf("intersection(r3,r3): ");
   printRectangle(i);
@@ -132,7 +171,7 @@ int main (void) {
   i = intersection(r4,r2);
   printf("intersection(r4,r2): ");
   printRectangle(i);
-  
+
   i = intersection(r4,r3);
   printf("intersection(r4,r3): ");
   printRectangle(i);
