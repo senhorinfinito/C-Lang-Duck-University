@@ -80,12 +80,18 @@ void retirement (int startAge,   //in months
   //    think about how you can abstract that part out into a function,
   //   and re-use it, rather than re-writing it]
   int main () {
-    retire_info working = {489,1000,0.045/12};
-    retire_info retired = {384,-4000,0.01/12};
-    retirement(327,21345,working,retired);
+    retire_info working;
+    working.months=489;
+    working.contribution=1000;
+    working.rate=0.045/12;
+    retire_info retired;
+    
+    retired.months = 384;
+    retired.contribution = -4000;
+    retired.rate_of_return = 0.01 / 12.0;
+    retirement(327, 21345.0, working, retired);
     return EXIT_SUCCESS;
   }
-
 
   //4. Write a main function which computes the retirement assuming
   //   Working:
