@@ -48,7 +48,7 @@ void retirement (int startAge, double initial,retire_info working, retire_info r
   double amt=initial;
   int m_age= stage%12;
   //in months //initial savings in dollars//info about working//info about being retired
-  for (int i; working.months>i; ++i) {
+  for (int i=0; working.months>i; ++i) {
     printf("Age %3d month %2d you have $%.2lf\n",y_age, m_age,amt);
 
 
@@ -60,7 +60,7 @@ void retirement (int startAge, double initial,retire_info working, retire_info r
     m_age = stage % 12;
 
   }
-  for (int j; retired.months > j; j++) {
+  for (int j=0; retired.months > j; j++) {
     printf ("Age %3d month %2d you have $%.2lf\n",y_age, m_age,amt);
 
 
