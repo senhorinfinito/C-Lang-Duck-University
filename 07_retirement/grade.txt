@@ -1,21 +1,9 @@
-Grading at Tue Sep  8 10:50:15 UTC 2020
+Grading at Tue Sep  8 10:57:12 UTC 2020
 Attempting to compile retirement.c
-Checking for struct _retire_info
-Found on line 19, column 1 
-Checking for field int months
-Found on line 20, column 3 
-Checking for field double contribution
-Found on line 21, column 3 
-Checking for field double rate_of_return
-Found on line 22, column 3 
-Checking for typedef of struct _retire_info to retire_info
-Found on line 24, column 1 
-Checking for void retirement (int startAge, double initial,  retire_info working,  retire_info retired)
-Found on line 32, column 1 
-Checking for int main(void)
-Found on line 82, column 3 
-Trying to run retirement calculator..
-Your file did not match the expected ouput
-Your output did not match what we expected. Here is what you printed
+retirement.c: In function ‘main’:
+retirement.c:86:12: error: ‘retire_info {aka struct _retire_info}’ has no member named ‘rate’
+     working.rate=0.045/12;
+            ^
+The code did not compile!
 
 Overall Grade: F
