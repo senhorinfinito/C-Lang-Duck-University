@@ -54,7 +54,7 @@ void retirement (int startAge,   //in months
     startAge++;
     initial = compute_earning(initial, working.rate_of_return, working.contribution);
   }
-  for ( i=0; retired.months <i; i++){
+  for (int i=0; retired.months <i; i++){
     printf("Age %3d month %2d you have $%.2lf\n", (startAge/12), (startAge%12), (initial));
     startAge++;
     initial = compute_earning(initial, retired.rate_of_return, retired.contribution);
@@ -78,9 +78,9 @@ void retirement (int startAge,   //in months
   //  [Hint: since you are performing a very similar computation,
   //    think about how you can abstract that part out into a function,
   //   and re-use it, rather than re-writing it]
-  int main (void) {
-    retire_info working = {489,1000,0.045};
-    retire_info retired = {384,-4000,0.01};
+  int main () {
+    retire_info working = {489,1000,0.045/12};
+    retire_info retired = {384,-4000,0.01/12};
     retirement(327,21345,working,retired);
     return EXIT_SUCCESS;
   }
