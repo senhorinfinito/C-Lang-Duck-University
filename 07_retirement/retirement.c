@@ -71,7 +71,8 @@ void retirement (int startAge, double initial,retire_info working, retire_info r
     m_age = stage % 12;
 
   }
-  return ;
+
+ 
 }
 int main() {
   retire_info working;
