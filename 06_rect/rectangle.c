@@ -40,7 +40,7 @@ rectangle canonicalize(rectangle r) {
   }
   return r;
 }
-}
+
 rectangle intersection(rectangle r1, rectangle r2) {
   //Find the intersection of two rectangles
 
