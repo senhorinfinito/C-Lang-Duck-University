@@ -83,7 +83,7 @@ void retirement (int startAge,   //in months
     retire_info working;
     working.months=489;
     working.contribution=1000;
-    working.rate=0.045/12;
+    working.rate_of_return=0.045/12;
     retire_info retired;
     
     retired.months = 384;
