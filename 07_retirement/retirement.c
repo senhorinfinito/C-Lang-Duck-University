@@ -59,7 +59,8 @@ void retirement (int startAge,   //in months
     startAge++;
     initial = compute_earning(initial, retired.rate_of_return, retired.contribution);
   }
-
+  return ;
+}
   // At the start of each month (before the balance changes), you should
   //print out the current balance with the following format:
   //"Age %3d month %2d you have $%.2lf\n"
