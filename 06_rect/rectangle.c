@@ -25,12 +25,9 @@ struct rect_tag
 };
 typedef struct rect_tag rectangle;
 
-
 rectangle canonicalize(rectangle r) {
-
   //WRITE THIS FUNCTION
-  //change neg. value to
- if (r.width < 0)
+  if (r.width < 0)
     {
       r.x -= abs(r.width);
       r.width = abs(r.width);
@@ -42,32 +39,43 @@ rectangle canonicalize(rectangle r) {
     }
   return r;
 }
-
 rectangle intersection(rectangle r1, rectangle r2) {
-  //Find the intersection of two rectangles
-
-  rectangle inter_rect;
   //WRITE THIS FUNCTION
-  r1= canonicalize (r1);
-  r2 = canonicalize (r2);
-  if (((r1.x + r1.width < r2.x) || (r2.x + r2.width < r1.x))
-      || ((r1.y + r1.height < r2.y) || (r2.y + r2.height < r1.y))) {
-    // Just give all zeros
-    inter_rect.x = 0;
-    inter_rect.y = 0;
-    inter_rect.width = 0;
-    inter_rect.height = 0;
+  //IMPORTANTISSIMO FAZER O SEGUINTE
+  r1 = canonicalize(r1);
+  r2 = canonicalize(r2);
+  rectangle ans;
+  if ((min(r1.y + r1.height,r2.y + r2.height) < max(r1.y,r2.y)) || (min(r1.x + r1.width,r2.x + r2.width) < max(r1.x,r2.x)))
+    {
+      /* printf("min de y+height = %d\n", min(r1.y + r1.height,r2.y + r2.height)); */
+      /* printf("max de Ys = %d\n", max(r1.y,r2.y)); */
+      /* printf("min de x+width = %d\n", min(r1.x + r1.width,r2.x + r2.width)); */
+      /* printf("max de Xs = %d\n", max(r1.x,r2.x));  */
+      ans.x = ans.y = ans.width = ans.height = 0;
+      return ans;
+    }
+  ans.x = max(r1.x,r2.x);
+  ans.y = max(r1.y,r2.y);
+  // printf("DEBUG: abs(r1.x - r2.x) = %d  ", abs(r1.x - r2.x));
+  // printf("DEBUG: abs(r1.y - r2.y) = %d\n", abs(r1.y - r2.y));
+  //int x_max = min(r1.x + r1.width, r2.x + r2.width);
+  //int y_max = min(r1.y + r1.height, r2.y + r2.height);
+  ans.width = abs(min(r1.x + r1.width, r2.x + r2.width) - ans.x);
+  ans.height = abs(min(r1.y + r1.height, r2.y + r2.height) - ans.y);
+  //printf("DEBUG: ans.width = %d  ", ans.width);
+  //printf("DEBUG: ans.height = %d\n", ans.height);
+  /*if (ans.width < 0)
+  {
+    ans.width = 0;
   }
-  // Intersection area
-  inter_rect.x = max(r1.x, r2.x);
-  inter_rect.width = min(r1.x + r1.width, r2.x + r2.width) - inter_rect.x;
-  inter_rect.y = max(r1.y, r2.y);
-  inter_rect.height = min(r1.y + r1.height, r2.y + r2.height) - inter_rect.y;
-
-  return inter_rect;
+  if (ans.height < 0)
+  {
+    ans.height = 0;
+    }*/
+  //printf("DEBUG: DEPOIS ans.witdh = %d  ", ans.width);
+  //printf("DEBUG: DEPOIS ans.height = %d\n", ans.height);
+  return ans;
 }
-
-
 
 //You should not need to modify any code below this line
 void printRectangle(rectangle r) {
