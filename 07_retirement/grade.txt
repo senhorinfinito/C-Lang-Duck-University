@@ -1,15 +1,11 @@
-Grading at Tue Sep  8 10:30:27 UTC 2020
+Grading at Tue Sep  8 10:46:54 UTC 2020
 Attempting to compile retirement.c
 retirement.c: In function ‘retirement’:
-retirement.c:57:9: error: ‘i’ undeclared (first use in this function)
-   for ( i=0; retired.months <i; i++){
-         ^
-retirement.c:57:9: note: each undeclared identifier is reported only once for each function it appears in
 retirement.c:81:3: error: ISO C forbids nested functions [-Werror=pedantic]
-   int main (void) {
+   int main () {
    ^
 retirement.c:81:7: error: ‘main’ is normally a non-static function [-Werror=main]
-   int main (void) {
+   int main () {
        ^
 retirement.c:86:3: error: expected declaration or statement at end of input
    }
