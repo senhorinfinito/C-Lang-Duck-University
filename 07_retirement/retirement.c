@@ -11,7 +11,7 @@ typedef struct _retire_info retire_info;
 
 double compute_balance(double balance , double rate_of_return, double contribution)
 {
-  return balance*(1 +rate_of _return/12)+ contribution;
+  return balance*(1 +rate_of_return/12)+ contribution;
 }
 void retirement (int startAge, double initial, retire_info working, retire_info retired)
 {
